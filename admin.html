@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Admin — Robux Shop</title><link rel="stylesheet" href="style.css"><link rel="icon" href="favicon.png"></head>
+<body>
+<header class="top"><div class="logo">ROBUX SHOP — Admin</div><nav><a href="index.html">Главная</a><a href="shop.html">Магазин</a></nav></header>
+<main class="container admin"><h2>Панель администратора</h2>
+<div class="login-row"><input id="adminUser" placeholder="Ник"/><input id="adminPass" placeholder="Пароль" type="password"/><button id="doLogin" class="btn">Войти</button><button id="doLogout" class="btn ghost" style="display:none">Выйти</button><div id="loginStatus" class="small"></div></div>
+<div id="adminArea" style="display:none"><div class="admin-grid"><div><h3>Добавить товар</h3><input id="pTitle" placeholder="Название"/><input id="pPrice" placeholder="Цена (руб)"/><input id="pImage" placeholder="URL картинки (опционально)"/><button id="addProduct" class="btn">Добавить</button></div><div><h3>Список товаров</h3><div id="productList"></div></div></div><h3>Экспорт / импорт</h3><button id="exportBtn" class="btn">Экспорт JSON</button><input id="importFile" type="file" accept=".json"/></div></main>
+<script src="admin.js"></script></body></html>
